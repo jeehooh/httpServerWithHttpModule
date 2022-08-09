@@ -44,23 +44,4 @@ const createUser = (req, res) => {
   res.json({ message: "userCreated" });
 };
 
-const createPost = (req, res) => {
-  const post = req.body.data;
-  console.log(post);
-
-  posts.push({
-    id: post.id,
-    title: post.title,
-    content: post.content,
-    userId: post.userId,
-  });
-
-  console.log("after: ", posts);
-
-  res.json({ message: "postCreated" });
-};
-
-module.exports = {
-  createUser,
-  createPost,
-};
+module.exports = { createUser };
