@@ -28,6 +28,8 @@ const posts = [
   },
 ];
 
+const
+
 const createUser = (req, res) => {
   const user = req.body.data;
   console.log(user);
